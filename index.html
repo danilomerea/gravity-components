@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Overview — Gravity Components</title>
+  <link rel="stylesheet" href="https://gravity.group-cdn.one/v5.38.6/css/brands/group-one.min.css"/>
+  <script type="module" src="https://gravity.group-cdn.one/v5.38.6/index.umd.js"></script>
+  <link rel="stylesheet" href="./src/styles.css"/>
+  <link rel="stylesheet" href="./src/comp-page.css"/>
+</head>
+<body class="gv-activated gv-pt-nav gv-full-page">
+  <a href="#main-content" class="gv-skip-link">Skip to main content</a>
+  <header class="gv-main-header">
+    <div class="gv-header-nav">
+      <div class="gv-nav-left">
+        <a href="./index.html" class="gv-logo" aria-label="Gravity Components">
+          <gv-logo src="https://gravity.group-cdn.one/v5.38.6/logos/group-one.svg"></gv-logo>
+        </a>
+      </div>
+      <nav class="gv-nav-links"><ul>
+        <li class="gv-active"><a href="./index.html">Components</a></li>
+        <li><a href="./icons.html">Icons</a></li>
+        <li><a href="./demo.html">Demo Layout</a></li>
+        <li><a href="https://gravity.group.one" target="_blank">Gravity Docs ↗</a></li>
+      </ul></nav>
+      <div class="gv-nav-menu">
+        <div class="gv-badge gv-badge-info">v5.38.6</div>
+      </div>
+    </div>
+  </header>
+  <main id="main-content" class="gv-surface-dim gv-flex gv-flex-1">
+    <div class="gv-flex gv-flex-1 gv-mx-auto gv-w-max-container">
+
+      <!-- Sidebar -->
+      <div class="page-sidebar gv-sidebar gv-max-tab-hidden" style="min-width:200px;padding:24px 0;overflow-y:auto;max-height:calc(100vh - 64px);position:sticky;top:64px;align-self:flex-start;">
+        <div class="gv-side-menu">
+          <div class="gv-side-label">Components</div>
+          <nav class="gv-side-nav"><ul>
+            <li><a href="components/accordion.html" class="gv-nav-item"><span>Accordion</span></a></li>
+            <li><a href="components/app-rail.html" class="gv-nav-item"><span>App Rail</span></a></li>
+            <li><a href="components/badge.html" class="gv-nav-item"><span>Badge</span></a></li>
+            <li><a href="components/breadcrumbs.html" class="gv-nav-item"><span>Breadcrumbs</span></a></li>
+            <li><a href="components/button.html" class="gv-nav-item"><span>Button</span></a></li>
+            <li><a href="components/card.html" class="gv-nav-item"><span>Card</span></a></li>
+            <li><a href="components/chat.html" class="gv-nav-item"><span>Chat</span></a></li>
+            <li><a href="components/chip.html" class="gv-nav-item"><span>Chip</span></a></li>
+            <li><a href="components/comparison-table.html" class="gv-nav-item"><span>Comparison Table</span></a></li>
+            <li><a href="components/content-container.html" class="gv-nav-item"><span>Content Container</span></a></li>
+            <li><a href="components/data-table.html" class="gv-nav-item"><span>Data Table</span></a></li>
+            <li><a href="components/divider.html" class="gv-nav-item"><span>Divider</span></a></li>
+            <li><a href="components/donut-chart.html" class="gv-nav-item"><span>Donut Chart</span></a></li>
+            <li><a href="components/footer.html" class="gv-nav-item"><span>Footer</span></a></li>
+            <li><a href="components/header.html" class="gv-nav-item"><span>Header</span></a></li>
+            <li><a href="components/legend.html" class="gv-nav-item"><span>Legend</span></a></li>
+            <li><a href="components/list.html" class="gv-nav-item"><span>List</span></a></li>
+            <li><a href="components/list-table.html" class="gv-nav-item"><span>List Table</span></a></li>
+            <li><a href="components/loader.html" class="gv-nav-item"><span>Loader</span></a></li>
+            <li><a href="components/modal.html" class="gv-nav-item"><span>Modal</span></a></li>
+            <li><a href="components/navigation.html" class="gv-nav-item"><span>Navigation</span></a></li>
+            <li><a href="components/notice.html" class="gv-nav-item"><span>Notice</span></a></li>
+            <li><a href="components/overlay.html" class="gv-nav-item"><span>Overlay</span></a></li>
+            <li><a href="components/page-header.html" class="gv-nav-item"><span>Page Header</span></a></li>
+            <li><a href="components/product-table.html" class="gv-nav-item"><span>Product Table</span></a></li>
+            <li><a href="components/resource.html" class="gv-nav-item"><span>Resource</span></a></li>
+            <li><a href="components/sidedrawer.html" class="gv-nav-item"><span>Sidedrawer</span></a></li>
+            <li><a href="components/skeleton.html" class="gv-nav-item"><span>Skeleton</span></a></li>
+            <li><a href="components/stepper.html" class="gv-nav-item"><span>Stepper</span></a></li>
+            <li><a href="components/sticky.html" class="gv-nav-item"><span>Sticky</span></a></li>
+            <li><a href="components/system-wide-banner.html" class="gv-nav-item"><span>System Wide Banner</span></a></li>
+            <li><a href="components/tabs.html" class="gv-nav-item"><span>Tabs</span></a></li>
+            <li><a href="components/tooltip.html" class="gv-nav-item"><span>Tooltip</span></a></li>
+          </ul></nav>
+          <div class="gv-side-label" style="margin-top:16px;">Form</div>
+          <nav class="gv-side-nav"><ul>
+            <li><a href="components/checkbox.html" class="gv-nav-item"><span>Checkbox</span></a></li>
+            <li><a href="components/input-ai.html" class="gv-nav-item"><span>Input AI</span></a></li>
+            <li><a href="components/input-autocomplete.html" class="gv-nav-item"><span>Input Autocomplete</span></a></li>
+            <li><a href="components/input-character-counter.html" class="gv-nav-item"><span>Input Character Counter</span></a></li>
+            <li><a href="components/input-date.html" class="gv-nav-item"><span>Input Date</span></a></li>
+            <li><a href="components/input-general.html" class="gv-nav-item"><span>Input General</span></a></li>
+            <li><a href="components/input-number.html" class="gv-nav-item"><span>Input Number</span></a></li>
+            <li><a href="components/input-search.html" class="gv-nav-item"><span>Input Search</span></a></li>
+            <li><a href="components/input-select.html" class="gv-nav-item"><span>Input Select</span></a></li>
+            <li><a href="components/input-textarea.html" class="gv-nav-item"><span>Input Textarea</span></a></li>
+            <li><a href="components/option-group.html" class="gv-nav-item"><span>Option Group</span></a></li>
+            <li><a href="components/quantity-select.html" class="gv-nav-item"><span>Quantity Select</span></a></li>
+            <li><a href="components/radio.html" class="gv-nav-item"><span>Radio</span></a></li>
+            <li><a href="components/toggle.html" class="gv-nav-item"><span>Toggle</span></a></li>
+          </ul></nav>
+          <div class="gv-side-label" style="margin-top:16px;">AI</div>
+          <nav class="gv-side-nav"><ul>
+            <li><a href="components/conversational-ai.html" class="gv-nav-item"><span>Conversational AI</span></a></li>
+          </ul></nav>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="gv-flex-1 gv-p-fluid" style="min-width:0;padding-top:32px;padding-bottom:64px;">
+
+        <div class="index-hero">
+          <h1 class="gv-heading-xxl">Gravity Component Overview</h1>
+          <p class="gv-text-lg gv-text-secondary">All 48 components — live previews, CDN v5.38.6. Click any card to open the full component page.</p>
+        </div>
+
+        <div class="index-search-bar">
+          <div class="gv-input gv-input-search" style="max-width:280px;">
+            <input type="search" id="index-search" placeholder="Search components…"/>
+            <button type="button" class="gv-addon" aria-label="Search"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/search.svg"></gv-icon></button>
+          </div>
+          <div class="index-filters">
+            <button type="button" class="gv-chip gv-chip-radio gv-chip-active" data-filter="all">All</button>
+            <button type="button" class="gv-chip gv-chip-radio" data-filter="component">Components</button>
+            <button type="button" class="gv-chip gv-chip-radio" data-filter="form">Form</button>
+            <button type="button" class="gv-chip gv-chip-radio" data-filter="ai">AI</button>
+          </div>
+        </div>
+
+    <p class="cat-heading" id="cat-component" data-cat="component">Components</p>
+    <div class="comp-grid" style="margin-bottom:8px;">
+      <a class="index-card" href="components/accordion.html" data-cat="component">
+        <div class="card-preview"><div class="gv-accordion" style="width:100%;max-width:240px;">
+  <div class="gv-acc-item"><h3 class="gv-acc-header"><button class="gv-acc-trigger gv-expanded" aria-expanded="true" aria-controls="pi-acc1" id="pi-acc1t"><span class="gv-acc-title">Open item</span></button></h3>
+  <div id="pi-acc1" role="region" aria-labelledby="pi-acc1t" class="gv-acc-body"><div class="gv-acc-content"><p>Expanded content here.</p></div></div></div>
+  <div class="gv-acc-item"><h3 class="gv-acc-header"><button class="gv-acc-trigger" aria-expanded="false" aria-controls="pi-acc2" id="pi-acc2t"><span class="gv-acc-title">Closed item</span></button></h3>
+  <div id="pi-acc2" role="region" aria-labelledby="pi-acc2t" class="gv-acc-body gv-hidden"><div class="gv-acc-content"><p>Hidden.</p></div></div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Accordion</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/app-rail.html" data-cat="component">
+        <div class="card-preview"><nav class="gv-app-rail" aria-label="App navigation">
+  <ul class="gv-nav-list">
+    <li><a href="#" class="gv-item gv-active" aria-current="true"><span class="gv-item-icon"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/dashboard.svg"></gv-icon></span><span>Dashboard</span></a></li>
+    <li><a href="#" class="gv-item"><span class="gv-item-icon"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/storefront.svg"></gv-icon></span><span>Store</span></a></li>
+    <li><a href="#" class="gv-item"><span class="gv-item-icon"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/language.svg"></gv-icon></span><span>Domains</span></a></li>
+  </ul>
+</nav></div>
+        <div class="card-meta">
+          <span class="card-name">App Rail</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/badge.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
+  <div class="gv-badge gv-badge-generic">Generic</div>
+  <div class="gv-badge gv-badge-alert">Alert</div>
+  <div class="gv-badge gv-badge-warning">Warning</div>
+  <div class="gv-badge gv-badge-info">Info</div>
+  <div class="gv-badge gv-badge-success">Success</div>
+  <div class="gv-badge gv-badge-discount">Save 20%</div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Badge</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/breadcrumbs.html" data-cat="component">
+        <div class="card-preview"><nav aria-label="Breadcrumb"><ol class="gv-breadcrumbs">
+  <li><a href="#">Account</a><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/chevron_right.svg"></gv-icon></li>
+  <li><a href="#">Hosting</a><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/chevron_right.svg"></gv-icon></li>
+  <li><span aria-current="page">Settings</span></li>
+</ol></nav></div>
+        <div class="card-meta">
+          <span class="card-name">Breadcrumbs</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/button.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+  <button type="button" class="gv-button gv-button-primary gv-mode-condensed">Primary</button>
+  <button type="button" class="gv-button gv-button-secondary gv-mode-condensed">Secondary</button>
+  <button type="button" class="gv-button gv-button-cta gv-mode-condensed">CTA</button>
+  <button type="button" class="gv-button gv-button-destructive gv-mode-condensed">Destructive</button>
+  <button type="button" class="gv-button gv-button-aida gv-mode-condensed"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/auto_awesome.svg"></gv-icon><span>Aida</span></button>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Button</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/card.html" data-cat="component">
+        <div class="card-preview"><div class="gv-card" style="max-width:200px;">
+  <div class="gv-card-tile"><gv-tile aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/tiles/dashboard.svg"></gv-tile></div>
+  <div class="gv-card-content"><h3 class="gv-card-title">Card title</h3><p>Short description.</p></div>
+  <div class="gv-card-footer"><button type="button" class="gv-button gv-button-primary gv-mode-condensed"><span>Action</span><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_forward.svg"></gv-icon></button></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Card</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/chat.html" data-cat="component">
+        <div class="card-preview"><section class="gv-chat" style="width:100%;max-width:260px;">
+  <ul class="gv-chat-list">
+    <li class="gv-chat-message gv-chat-outgoing"><div class="gv-meta"><span class="gv-meta-user">You</span></div><p class="gv-chat-message-body">Build me a landing page.</p></li>
+    <li class="gv-chat-message gv-chat-incoming"><div class="gv-meta"><span class="gv-meta-user">Aida</span></div><p class="gv-chat-message-body">On it! Give me a moment…</p></li>
+  </ul>
+</section></div>
+        <div class="card-meta">
+          <span class="card-name">Chat</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/chip.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start;">
+  <div style="display:flex;gap:6px;flex-wrap:wrap;">
+    <button type="button" class="gv-chip">Inactive</button>
+    <button type="button" class="gv-chip gv-chip-active">Active</button>
+    <button type="button" class="gv-chip">Filter</button>
+  </div>
+  <div style="display:flex;gap:6px;">
+    <button type="button" class="gv-chip gv-chip-radio gv-chip-active">Monthly</button>
+    <button type="button" class="gv-chip gv-chip-radio">Annual</button>
+  </div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Chip</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/comparison-table.html" data-cat="component">
+        <div class="card-preview"><div class="gv-table-comparison gv-table-features" style="width:100%;font-size:12px;">
+  <div class="gv-table" role="table">
+    <header class="gv-table-header" role="rowgroup"><div class="gv-table-slider"><div class="gv-rows"><div class="gv-table-row" role="row">
+      <div class="gv-row-header gv-sr-only" role="rowheader"><span>Plan</span></div>
+      <div class="gv-row-cells">
+        <div class="gv-row-cell" role="columnheader"><div class="gv-header-text"><h3 class="gv-title" style="font-size:12px;">Starter</h3></div></div>
+        <div class="gv-row-cell" role="columnheader"><span class="gv-recommended-label">Recommended</span><div class="gv-header-text"><h3 class="gv-title" style="font-size:12px;">Business</h3></div></div>
+      </div>
+    </div></div></div></header>
+    <div class="gv-table-body"><section class="gv-table-section" role="rowgroup"><div class="gv-rows">
+      <div class="gv-table-row" role="row">
+        <div class="gv-row-header" role="rowheader"><span class="gv-row-title">SSL</span></div>
+        <div class="gv-row-cells">
+          <div class="gv-row-cell" role="cell"><gv-icon aria-hidden="true" class="gv-available" src="https://gravity.group-cdn.one/v5.38.6/icons/check_circle.svg"></gv-icon></div>
+          <div class="gv-row-cell" role="cell"><gv-icon aria-hidden="true" class="gv-available" src="https://gravity.group-cdn.one/v5.38.6/icons/check_circle.svg"></gv-icon></div>
+        </div>
+      </div>
+    </div></section></div>
+  </div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Comparison Table</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/content-container.html" data-cat="component">
+        <div class="card-preview"><div class="gv-content-container gv-p-lg gv-stack-space-sm" style="width:100%;max-width:260px;">
+  <h3 class="gv-heading-xs">Content container</h3>
+  <p class="gv-text-sm">Provides background, border, radius and shadow.</p>
+  <div class="gv-notice gv-notice-addon gv-notice-info"><gv-icon aria-hidden="true" class="gv-notice-icon" src="https://gravity.group-cdn.one/v5.38.6/icons/info.svg"></gv-icon><p class="gv-notice-content">Info notice inside</p></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Content Container</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/data-table.html" data-cat="component">
+        <div class="card-preview"><div class="gv-data-table" style="width:100%;font-size:12px;">
+  <table>
+    <thead><tr><th scope="col"><input type="checkbox" class="gv-checkbox gv-mode-condensed"/></th><th>Domain</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td><input type="checkbox" class="gv-checkbox gv-mode-condensed"/></td><td>example.com</td><td><div class="gv-badge gv-badge-success">Active</div></td></tr>
+      <tr><td><input type="checkbox" class="gv-checkbox gv-mode-condensed"/></td><td>myshop.one</td><td><div class="gv-badge gv-badge-warning">Expiring</div></td></tr>
+    </tbody>
+  </table>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Data Table</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/divider.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:16px;width:100%;padding:0 8px;">
+  <div class="gv-divider"></div>
+  <div style="display:flex;align-items:center;gap:12px;"><span class="gv-text-sm">Left</span><div class="gv-divider" style="flex:1;"></div><span class="gv-text-sm">Right</span></div>
+  <div class="gv-divider-button"><div class="gv-divider" aria-hidden="true"></div><button type="button" class="gv-button gv-button-secondary gv-mode-condensed"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/add.svg"></gv-icon><span>Add</span></button><div class="gv-divider" aria-hidden="true"></div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Divider</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/donut-chart.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;gap:16px;align-items:center;">
+  <div class="gv-donut-chart"><div class="gv-progress-circle" data-progress-percent="0" role="meter" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><gv-indicator src="https://gravity.group-cdn.one/v5.38.6/indicators/progress-circle.svg" aria-hidden="true"></gv-indicator><span>—</span></div></div>
+  <div class="gv-donut-chart"><div class="gv-progress-circle gv-state-success" data-progress-percent="40" role="meter" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><gv-indicator src="https://gravity.group-cdn.one/v5.38.6/indicators/progress-circle.svg" aria-hidden="true"></gv-indicator><span>40</span></div></div>
+  <div class="gv-donut-chart"><div class="gv-progress-circle gv-state-success" data-progress-percent="90" role="meter" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><gv-indicator src="https://gravity.group-cdn.one/v5.38.6/indicators/progress-circle.svg" aria-hidden="true"></gv-indicator><span>90</span></div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Donut Chart</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/footer.html" data-cat="component">
+        <div class="card-preview"><footer class="gv-footer" style="width:100%;position:relative;">
+  <div class="gv-footer-bar"><div class="gv-footer-content">
+    <ul class="gv-footer-links"><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Cookies</a></li></ul>
+    <div class="gv-footer-copyright">© 2026 group.one</div>
+  </div></div>
+</footer></div>
+        <div class="card-meta">
+          <span class="card-name">Footer</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/header.html" data-cat="component">
+        <div class="card-preview"><header class="gv-main-header" style="position:relative;width:100%;">
+  <div class="gv-header-nav">
+    <div class="gv-nav-left"><a class="gv-logo" href="#" aria-label="Home"><gv-logo src="https://gravity.group-cdn.one/v5.38.6/logos/group-one.svg"></gv-logo></a></div>
+    <nav class="gv-nav-links"><ul><li class="gv-active"><a href="#">Home</a></li><li><a href="#">Domains</a></li><li><a href="#">Hosting</a></li></ul></nav>
+  </div>
+</header></div>
+        <div class="card-meta">
+          <span class="card-name">Header</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/legend.html" data-cat="component">
+        <div class="card-preview"><div class="gv-legend" style="width:100%;max-width:240px;">
+  <ul class="gv-legend-bar">
+    <li><gv-icon aria-hidden="true" class="gv-legend-normal" src="https://gravity.group-cdn.one/v5.38.6/icons/remove.svg"></gv-icon><span>Normal</span></li>
+    <li><gv-icon aria-hidden="true" class="gv-legend-poor" src="https://gravity.group-cdn.one/v5.38.6/icons/dangerous.svg"></gv-icon><span>Poor</span></li>
+    <li><gv-icon aria-hidden="true" class="gv-legend-improve" src="https://gravity.group-cdn.one/v5.38.6/icons/warning.svg"></gv-icon><span>Improve</span></li>
+    <li><gv-icon aria-hidden="true" class="gv-legend-good" src="https://gravity.group-cdn.one/v5.38.6/icons/check_circle.svg"></gv-icon><span>Good</span></li>
+  </ul>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Legend</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/list.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;gap:24px;align-items:flex-start;">
+  <ul class="gv-list-items gv-list-check gv-mode-condensed"><li>Free SSL</li><li>Daily backups</li><li>99.9% uptime</li></ul>
+  <ul class="gv-list-items gv-list-bullet gv-mode-condensed"><li>10 GB storage</li><li>5 websites</li><li>SSH access</li></ul>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">List</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/list-table.html" data-cat="component">
+        <div class="card-preview"><div class="gv-list-table" style="width:100%;font-size:12px;">
+  <div class="gv-list-row gv-list-header"><span>Name</span><span>Type</span><span>Status</span></div>
+  <div class="gv-list-row"><span>example.com</span><span>.com</span><span><div class="gv-badge gv-badge-success">Active</div></span></div>
+  <div class="gv-list-row"><span>mysite.one</span><span>.one</span><span><div class="gv-badge gv-badge-warning">Expiring</div></span></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">List Table</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/loader.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;gap:24px;align-items:center;">
+  <gv-loader src="https://gravity.group-cdn.one/v5.38.6/loaders/spinner.svg"></gv-loader>
+  <div class="gv-loader-container"><gv-loader src="https://gravity.group-cdn.one/v5.38.6/loaders/spinner.svg"></gv-loader><p style="font-size:12px;">Loading…</p></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Loader</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/modal.html" data-cat="component">
+        <div class="card-preview"><div class="gv-modal-content" style="position:relative;max-width:240px;width:100%;" role="dialog" aria-labelledby="pi-mdemo" aria-modal="true">
+  <button type="button" class="gv-modal-close" aria-label="Close"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/close.svg"></gv-icon></button>
+  <div class="gv-modal-body"><h2 id="pi-mdemo" class="gv-modal-title">Confirm action</h2><p>Are you sure you want to continue?</p></div>
+  <div class="gv-button-group"><button type="button" class="gv-button gv-button-cancel gv-mode-condensed">Cancel</button><button type="button" class="gv-button gv-button-primary gv-mode-condensed">Confirm</button></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Modal</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/navigation.html" data-cat="component">
+        <div class="card-preview"><nav class="gv-global-nav" aria-label="App nav">
+  <ul class="gv-nav-list">
+    <li><button type="button" class="gv-nav-item gv-active" aria-label="Dashboard" aria-pressed="true"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/view_comfy.svg"></gv-icon></button></li>
+    <li><button type="button" class="gv-nav-item" aria-label="Storefront"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/storefront.svg"></gv-icon></button></li>
+    <li><button type="button" class="gv-nav-item" aria-label="Domains"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/language.svg"></gv-icon></button></li>
+    <li><button type="button" class="gv-nav-item" aria-label="Mail"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/mail.svg"></gv-icon></button></li>
+  </ul>
+</nav></div>
+        <div class="card-meta">
+          <span class="card-name">Navigation</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/notice.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:6px;width:100%;padding:0 8px;">
+  <div class="gv-notice gv-notice-info gv-mode-condensed"><gv-icon aria-hidden="true" class="gv-notice-icon" src="https://gravity.group-cdn.one/v5.38.6/icons/info.svg"></gv-icon><p class="gv-notice-content">Info notice</p></div>
+  <div class="gv-notice gv-notice-success gv-mode-condensed"><gv-icon aria-hidden="true" class="gv-notice-icon" src="https://gravity.group-cdn.one/v5.38.6/icons/check_circle.svg"></gv-icon><p class="gv-notice-content">Success</p></div>
+  <div class="gv-notice gv-notice-warning gv-mode-condensed"><gv-icon aria-hidden="true" class="gv-notice-icon" src="https://gravity.group-cdn.one/v5.38.6/icons/warning.svg"></gv-icon><p class="gv-notice-content">Warning</p></div>
+  <div class="gv-notice gv-notice-alert gv-mode-condensed"><gv-icon aria-hidden="true" class="gv-notice-icon" src="https://gravity.group-cdn.one/v5.38.6/icons/error.svg"></gv-icon><p class="gv-notice-content">Alert</p></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Notice</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/overlay.html" data-cat="component">
+        <div class="card-preview"><div style="position:relative;min-height:100px;width:100%;overflow:hidden;border-radius:8px;">
+  <div style="padding:12px;position:relative;z-index:2;"><p class="gv-text-sm" style="color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5);">Content behind overlay</p></div>
+  <div class="gv-overlay gv-state-open" style="position:absolute;inset:0;opacity:.6;"></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Overlay</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/page-header.html" data-cat="component">
+        <div class="card-preview"><div class="gv-page-header gv-header" style="width:100%;">
+  <div class="gv-header-content">
+    <div class="gv-content"><h1 class="gv-title" style="font-size:18px;">Domains</h1><h2 class="gv-subtitle" style="font-size:13px;">Manage your domains</h2></div>
+    <div class="gv-button-group"><button type="button" class="gv-button gv-button-primary gv-mode-condensed"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/add.svg"></gv-icon><span>Register</span></button></div>
+  </div>
+  <div class="gv-header-status"><div class="gv-status"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/vitals.svg"></gv-icon><div class="gv-text"><span class="gv-title">Active</span><span class="gv-separator">:</span><span class="gv-value">12</span></div></div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Page Header</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/product-table.html" data-cat="component">
+        <div class="card-preview"><div class="gv-table-col" style="font-size:12px;max-width:180px;">
+  <div class="gv-header-text"><h3 class="gv-title" style="font-size:14px;">Business</h3><p class="gv-subtitle" style="font-size:11px;">For growing businesses</p></div>
+  <div class="gv-order-details" style="margin-top:8px;"><div class="gv-order-product-button">
+    <div class="gv-price-container"><div class="gv-price-main"><div class="gv-price"><span class="gv-price-text">€ 9,-</span><span class="gv-period">/mo</span></div></div></div>
+    <button type="button" class="gv-button gv-button-cta gv-mode-condensed">Select</button>
+  </div></div>
+  <div class="gv-section-key-features" style="margin-top:8px;"><ul class="gv-features-list">
+    <li class="gv-feature-item gv-key-feature"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/check_circle.svg"></gv-icon><div class="gv-content"><span class="gv-text">50 GB SSD</span></div></li>
+    <li class="gv-feature-item gv-key-feature"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/check_circle.svg"></gv-icon><div class="gv-content"><span class="gv-text">5 websites</span></div></li>
+  </ul></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Product Table</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/resource.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:12px;width:100%;max-width:240px;padding:0 4px;">
+  <div class="gv-resource"><div class="gv-progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><div class="gv-bar" style="width:40%"></div></div><div class="gv-content"><span class="gv-amount">240 GB</span><span class="gv-description">of 600 GB used</span></div></div>
+  <div class="gv-resource"><div class="gv-progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><div class="gv-bar gv-alert" style="width:85%"></div></div><div class="gv-content"><span class="gv-amount">8.5 GB</span><span class="gv-description">of 10 GB (alert)</span></div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Resource</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/sidedrawer.html" data-cat="component">
+        <div class="card-preview"><div style="position:relative;min-height:160px;width:100%;overflow:hidden;">
+  <p class="gv-text-sm gv-text-secondary" style="padding:12px;">← Page behind drawer</p>
+  <div class="gv-sidedrawer gv-state-open" style="position:absolute;top:0;right:0;bottom:0;z-index:10;">
+    <div class="gv-side-content gv-pos-right">
+      <button type="button" class="gv-btn-close" aria-label="Close"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/close.svg"></gv-icon></button>
+      <div class="gv-side-account"><div class="gv-account-info"><span class="gv-name">Danilo Merea</span><span class="gv-sub">danilo@group.one</span></div></div>
+      <div class="gv-side-menu"><nav class="gv-side-nav"><ul>
+        <li><a href="#" class="gv-nav-item gv-active"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/account_circle.svg"></gv-icon><span>My info</span></a></li>
+        <li><a href="#" class="gv-nav-item"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/logout.svg"></gv-icon><span>Logout</span></a></li>
+      </ul></nav></div>
+    </div>
+  </div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Sidedrawer</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/skeleton.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:8px;width:100%;max-width:240px;">
+  <div class="gv-skeleton" style="height:18px;width:55%;"></div>
+  <div class="gv-skeleton" style="height:13px;"></div>
+  <div class="gv-skeleton" style="height:13px;width:85%;"></div>
+  <div class="gv-skeleton" style="height:13px;width:70%;"></div>
+  <div class="gv-skeleton gv-radius-0" style="height:56px;margin-top:4px;"></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Skeleton</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/stepper.html" data-cat="component">
+        <div class="card-preview"><nav class="gv-stepper" aria-label="Checkout" style="position:relative;width:100%;max-width:280px;">
+  <ol>
+    <li class="gv-step gv-step-done"><a href="#" class="gv-step-content"><span class="gv-sr-only">Step 1 done</span><div class="gv-step-type" aria-hidden="true"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/check.svg"></gv-icon><span class="gv-step-nr">1</span></div><div class="gv-step-label" aria-hidden="true">Domain</div></a><div class="gv-step-line" aria-hidden="true"></div></li>
+    <li class="gv-step gv-step-current"><div class="gv-step-content" aria-current="step"><span class="gv-sr-only">Step 2 current</span><div class="gv-step-type" aria-hidden="true"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/check.svg"></gv-icon><span class="gv-step-nr">2</span></div><div class="gv-step-label" aria-hidden="true">Extras</div></div><div class="gv-step-line" aria-hidden="true"></div></li>
+    <li class="gv-step gv-step-last"><div class="gv-step-content"><span class="gv-sr-only">Step 3</span><div class="gv-step-type" aria-hidden="true"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/check.svg"></gv-icon><span class="gv-step-nr">3</span></div><div class="gv-step-label" aria-hidden="true">Payment</div></div></li>
+  </ol>
+</nav></div>
+        <div class="card-meta">
+          <span class="card-name">Stepper</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/sticky.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:0;width:100%;">
+  <div class="gv-sticky-content gv-state-open" style="position:relative;display:flex;align-items:center;padding:10px 16px;gap:12px;background:var(--color-surface-bright);">
+    <span class="gv-text-sm gv-text-bold">example.com</span>
+    <div class="gv-badge gv-badge-discount">€ 9,-/mo</div>
+    <div style="margin-left:auto;"><button type="button" class="gv-button gv-button-cta gv-mode-condensed">Order now</button></div>
+  </div>
+  <p class="gv-text-sm gv-text-secondary" style="padding:8px 16px;font-size:11px;">↑ appears after scroll</p>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Sticky</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/system-wide-banner.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:4px;width:100%;">
+  <div class="gv-notice gv-system-wide"><gv-icon aria-hidden="true" class="gv-notice-icon" src="https://gravity.group-cdn.one/v5.38.6/icons/error.svg"></gv-icon><p class="gv-notice-content">Scheduled maintenance tonight at 23:00.</p><button type="button" class="gv-notice-close" aria-label="Close"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/close.svg"></gv-icon></button></div>
+  <div class="gv-notice gv-system-wide gv-notice-warning"><gv-icon aria-hidden="true" class="gv-notice-icon" src="https://gravity.group-cdn.one/v5.38.6/icons/warning.svg"></gv-icon><p class="gv-notice-content">Your SSL expires in 3 days.</p><button type="button" class="gv-notice-close" aria-label="Close"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/close.svg"></gv-icon></button></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">System Wide Banner</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/tabs.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;align-items:flex-start;width:100%;max-width:280px;">
+  <div class="gv-scroll-row" style="width:100%;"><div class="gv-section-controls gv-section-tablist" role="tablist" aria-label="Plans">
+    <button role="tab" class="gv-tab gv-control gv-tab-active" aria-selected="true" aria-controls="pi-tp1"><span class="gv-tab-content">Starter</span></button>
+    <button role="tab" class="gv-tab gv-control" aria-selected="false" aria-controls="pi-tp2"><span class="gv-tab-content">Business</span></button>
+    <button role="tab" class="gv-tab gv-control" aria-selected="false" aria-controls="pi-tp3"><span class="gv-tab-content">Enterprise</span></button>
+  </div></div>
+  <div id="pi-tp1" role="tabpanel" class="gv-tab-panel gv-panel-active" style="padding:12px 0;"><p class="gv-text-sm">10 GB · 1 website · Free SSL</p></div>
+  <div id="pi-tp2" role="tabpanel" class="gv-tab-panel" style="padding:12px 0;"><p class="gv-text-sm">50 GB · 5 websites · Priority support</p></div>
+  <div id="pi-tp3" role="tabpanel" class="gv-tab-panel" style="padding:12px 0;"><p class="gv-text-sm">Unlimited · Dedicated SLA</p></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Tabs</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/tooltip.html" data-cat="component">
+        <div class="card-preview"><div style="display:flex;gap:32px;justify-content:center;padding-top:32px;">
+  <div class="gv-tooltip-container gv-tooltip-top-center"><button class="gv-tooltip-button" aria-label="Info" aria-describedby="pi-tt1"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/info.svg"></gv-icon></button><div id="pi-tt1" class="gv-tooltip gv-arrow-bottom-center" role="tooltip"><p>Top center</p></div></div>
+  <div class="gv-tooltip-container gv-tooltip-top-left"><button class="gv-tooltip-button gv-text-dotted" aria-describedby="pi-tt2"><span>Hover me</span></button><div id="pi-tt2" class="gv-tooltip gv-arrow-bottom-left" role="tooltip"><p>Dotted trigger</p></div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Tooltip</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+    <p class="cat-heading" id="cat-form" data-cat="form">Form Components</p>
+    <div class="comp-grid" style="margin-bottom:8px;">
+      <a class="index-card" href="components/checkbox.html" data-cat="form">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start;">
+  <label style="display:flex;gap:8px;align-items:center;"><input type="checkbox" class="gv-checkbox" /> Unchecked</label>
+  <label style="display:flex;gap:8px;align-items:center;"><input type="checkbox" class="gv-checkbox" checked /> Checked</label>
+  <label style="display:flex;gap:8px;align-items:center;"><input type="checkbox" class="gv-checkbox" disabled /> Disabled</label>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Checkbox</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-ai.html" data-cat="form">
+        <div class="card-preview"><div class="gv-form-option gv-input-ai" style="width:100%;max-width:280px;">
+  <div class="gv-input gv-input-textarea"><textarea placeholder="Ask Aida anything…" rows="2"></textarea>
+    <div class="gv-input-toolbar gv-mode-condensed" role="toolbar"><div class="gv-toolbar-end"><button type="button" class="gv-button gv-button-icon gv-button-primary" aria-label="Send"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_forward.svg"></gv-icon></button></div></div>
+  </div>
+  <span class="gv-input-message gv-message-info">AI-generated replies may not always be accurate.</span>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input AI</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-autocomplete.html" data-cat="form">
+        <div class="card-preview"><div class="gv-form-option gv-autocomplete" style="width:100%;max-width:240px;">
+  <label class="gv-label" for="idx-ac">Domain extension</label>
+  <div class="gv-input gv-with-addon">
+    <input id="idx-ac" type="text" placeholder=".com, .net, .one…" />
+    <button type="button" class="gv-addon" aria-label="Open"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/expand_more.svg"></gv-icon></button>
+  </div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input Autocomplete</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-character-counter.html" data-cat="form">
+        <div class="card-preview"><div class="gv-form-option" style="width:100%;max-width:240px;">
+  <label class="gv-label" for="idx-cc">Meta description</label>
+  <div class="gv-char-counter-input"><input type="text" id="idx-cc" class="gv-input" placeholder="Describe your page…" maxlength="160"/></div>
+  <div class="gv-char-counter-info"><div class="gv-char-counter"><span class="gv-char-total">0</span><span>/</span><span class="gv-char-max">160</span></div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input Character Counter</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-date.html" data-cat="form">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:200px;">
+  <div class="gv-input gv-input-date gv-with-addon"><input type="date"/><div class="gv-addon"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/date_range.svg"></gv-icon></div></div>
+  <div class="gv-input gv-input-date gv-with-addon"><input type="time"/><div class="gv-addon"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/schedule.svg"></gv-icon></div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input Date</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-general.html" data-cat="form">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:240px;">
+  <input type="text" class="gv-input" placeholder="Default input"/>
+  <input type="text" class="gv-input gv-error" value="Error state"/>
+  <div class="gv-input gv-with-addon"><input type="text" placeholder="With prefix"/><div class="gv-prefix">https://</div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input General</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-number.html" data-cat="form">
+        <div class="card-preview"><div class="gv-input gv-input-number">
+  <button type="button" class="gv-subtract" aria-label="Decrease"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/remove.svg"></gv-icon></button>
+  <input type="number" value="3"/>
+  <button type="button" class="gv-add" aria-label="Increase"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/add.svg"></gv-icon></button>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input Number</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-search.html" data-cat="form">
+        <div class="card-preview"><div class="gv-input gv-input-search" style="width:100%;max-width:240px;">
+  <input type="search" placeholder="Search domains…"/>
+  <button type="button" class="gv-addon" aria-label="Search"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/search.svg"></gv-icon></button>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input Search</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-select.html" data-cat="form">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:220px;">
+  <div class="gv-input gv-input-select"><select><option>Choose a plan</option><option>Starter</option><option>Business</option></select><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/expand_more.svg"></gv-icon></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input Select</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/input-textarea.html" data-cat="form">
+        <div class="card-preview"><div class="gv-input gv-input-textarea" style="width:100%;max-width:260px;">
+  <textarea placeholder="Enter your message here…" rows="3"></textarea>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Input Textarea</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/option-group.html" data-cat="form">
+        <div class="card-preview"><div class="gv-option-group gv-mode-condensed" style="width:100%;max-width:220px;">
+  <fieldset class="gv-options">
+    <div class="gv-label gv-option-group-label"><legend>Features</legend></div>
+    <div class="gv-form-option gv-option-group-types">
+      <label class="gv-option-inline"><input type="checkbox" class="gv-checkbox" checked/><span class="gv-label">Free SSL</span></label>
+      <label class="gv-option-inline"><input type="checkbox" class="gv-checkbox"/><span class="gv-label">Daily backups</span></label>
+      <label class="gv-option-inline"><input type="checkbox" class="gv-checkbox" checked/><span class="gv-label">CDN</span></label>
+    </div>
+  </fieldset>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Option Group</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/quantity-select.html" data-cat="form">
+        <div class="card-preview"><div class="gv-input-quantity-select" style="width:100%;max-width:220px;">
+  <div class="gv-header"><span class="gv-title">CPU cores</span></div>
+  <div class="gv-input-quantity-items">
+    <div class="gv-input-quantity-item"><label><input type="radio" name="pi-qty" value="2" checked/><span class="gv-content"><span class="gv-amount">2</span></span></label></div>
+    <div class="gv-input-quantity-item"><label><input type="radio" name="pi-qty" value="4"/><span class="gv-content"><span class="gv-amount">4</span></span></label></div>
+    <div class="gv-input-quantity-item"><label><input type="radio" name="pi-qty" value="8"/><span class="gv-content"><span class="gv-amount">8</span></span></label></div>
+  </div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Quantity Select</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/radio.html" data-cat="form">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start;">
+  <label style="display:flex;gap:8px;align-items:center;"><input type="radio" name="pi-r" class="gv-radio" checked/> Monthly billing</label>
+  <label style="display:flex;gap:8px;align-items:center;"><input type="radio" name="pi-r" class="gv-radio"/> Annual (save 20%)</label>
+  <label style="display:flex;gap:8px;align-items:center;"><input type="radio" name="pi-r" class="gv-radio" disabled/> Disabled option</label>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Radio</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+      <a class="index-card" href="components/toggle.html" data-cat="form">
+        <div class="card-preview"><div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;">
+  <label style="display:flex;gap:10px;align-items:center;"><div class="gv-toggle"><input type="checkbox" id="pi-tg1"/><div class="gv-toggle-slider"></div></div> Off</label>
+  <label style="display:flex;gap:10px;align-items:center;"><div class="gv-toggle"><input type="checkbox" id="pi-tg2" checked/><div class="gv-toggle-slider"></div></div> On</label>
+  <label style="display:flex;gap:10px;align-items:center;"><div class="gv-toggle"><input type="checkbox" id="pi-tg3" disabled/><div class="gv-toggle-slider"></div></div> Disabled</label>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Toggle</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+    <p class="cat-heading" id="cat-ai" data-cat="ai">AI Components</p>
+    <div class="comp-grid" style="margin-bottom:8px;">
+      <a class="index-card" href="components/conversational-ai.html" data-cat="ai">
+        <div class="card-preview"><div style="width:100%;max-width:260px;display:flex;flex-direction:column;gap:0;">
+  <section class="gv-chat"><ul class="gv-chat-list">
+    <li class="gv-chat-message gv-chat-outgoing"><div class="gv-meta"><span class="gv-meta-user">You</span></div><p class="gv-chat-message-body">Build me a landing page.</p></li>
+    <li class="gv-chat-message gv-chat-incoming"><div class="gv-meta"><span class="gv-meta-user">Aida</span></div><p class="gv-chat-message-body">Sure! What's the main goal?</p></li>
+  </ul></section>
+  <div class="gv-form-option gv-input-ai"><div class="gv-input gv-input-textarea"><textarea placeholder="Reply…" rows="1"></textarea>
+    <div class="gv-input-toolbar gv-mode-condensed" role="toolbar"><div class="gv-toolbar-end"><button type="button" class="gv-button gv-button-icon gv-button-primary" aria-label="Send"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_forward.svg"></gv-icon></button></div></div>
+  </div></div>
+</div></div>
+        <div class="card-meta">
+          <span class="card-name">Conversational AI</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+      </div>
+    </div>
+  </main>
+
+<script>
+document.querySelectorAll('.gv-acc-trigger').forEach(t => {
+  t.addEventListener('click', () => {
+    const open = t.getAttribute('aria-expanded') === 'true';
+    t.closest('.gv-accordion')?.querySelectorAll('.gv-acc-trigger').forEach(x => {
+      x.classList.remove('gv-expanded'); x.setAttribute('aria-expanded','false');
+      const b = document.getElementById(x.getAttribute('aria-controls'));
+      if (b) b.classList.add('gv-hidden');
+    });
+    if (!open) {
+      t.classList.add('gv-expanded'); t.setAttribute('aria-expanded','true');
+      const b = document.getElementById(t.getAttribute('aria-controls'));
+      if (b) b.classList.remove('gv-hidden');
+    }
+  });
+});
+document.querySelectorAll('[role="tablist"]').forEach(tl => {
+  tl.querySelectorAll('[role="tab"]').forEach(tab => {
+    tab.addEventListener('click', () => {
+      tl.querySelectorAll('[role="tab"]').forEach(x => { x.classList.remove('gv-tab-active'); x.setAttribute('aria-selected','false'); });
+      tab.classList.add('gv-tab-active'); tab.setAttribute('aria-selected','true');
+      const panel = document.getElementById(tab.getAttribute('aria-controls'));
+      tl.closest('[class]')?.querySelectorAll('.gv-tab-panel').forEach(p => p.classList.remove('gv-panel-active'));
+      if (panel) panel.classList.add('gv-panel-active');
+    });
+  });
+});
+document.querySelectorAll('.gv-chip:not(.gv-chip-radio)').forEach(c => c.addEventListener('click', () => c.classList.toggle('gv-chip-active')));
+document.querySelectorAll('.gv-chip-radio').forEach(c => {
+  c.addEventListener('click', () => {
+    c.closest('div')?.querySelectorAll('.gv-chip-radio').forEach(x => x.classList.remove('gv-chip-active'));
+    c.classList.add('gv-chip-active');
+  });
+});
+document.querySelectorAll('.gv-char-counter-input input, .gv-char-counter-input textarea').forEach(input => {
+  const counter = input.closest('.gv-form-option')?.querySelector('.gv-char-total');
+  if (counter) input.addEventListener('input', () => counter.textContent = input.value.length);
+});
+// sidebar scroll-spy
+const navLinks = document.querySelectorAll('.gv-side-nav a.gv-nav-item');
+if (navLinks.length) {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('gv-active'));
+        const a = document.querySelector(`.gv-side-nav a[href="#${e.target.id}"]`);
+        if (a) a.classList.add('gv-active');
+      }
+    });
+  }, { rootMargin: '-72px 0px -55% 0px' });
+  document.querySelectorAll('section[id], div[id]').forEach(s => obs.observe(s));
+}
+// index filter chips
+const filterBtns = document.querySelectorAll('[data-filter]');
+const indexCards = document.querySelectorAll('[data-cat]');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('gv-chip-active'));
+    btn.classList.add('gv-chip-active');
+    const f = btn.dataset.filter;
+    indexCards.forEach(c => { c.style.display = (!f || f === 'all' || c.dataset.cat === f) ? '' : 'none'; });
+    document.querySelectorAll('.cat-heading').forEach(h => {
+      if (!f || f === 'all') { h.style.display = ''; return; }
+      h.style.display = h.dataset.cat === f ? '' : 'none';
+    });
+  });
+});
+// index search
+const searchInput = document.getElementById('index-search');
+if (searchInput) {
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.toLowerCase();
+    indexCards.forEach(c => {
+      const name = c.querySelector('.card-name')?.textContent.toLowerCase() || '';
+      c.style.display = name.includes(q) ? '' : 'none';
+    });
+  });
+}
+</script>
+</body>
+</html>

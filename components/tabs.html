@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tabs — Gravity Components</title>
+  <link rel="stylesheet" href="https://gravity.group-cdn.one/v5.38.6/css/brands/group-one.min.css"/>
+  <script type="module" src="https://gravity.group-cdn.one/v5.38.6/index.umd.js"></script>
+  <link rel="stylesheet" href="../src/styles.css"/>
+  <link rel="stylesheet" href="../src/comp-page.css"/>
+</head>
+<body class="gv-activated gv-pt-nav gv-full-page">
+  <a href="#main-content" class="gv-skip-link">Skip to main content</a>
+  <header class="gv-main-header">
+    <div class="gv-header-nav">
+      <div class="gv-nav-left">
+        <a href="../index.html" class="gv-logo" aria-label="Gravity Components">
+          <gv-logo src="https://gravity.group-cdn.one/v5.38.6/logos/group-one.svg"></gv-logo>
+        </a>
+      </div>
+      <nav class="gv-nav-links"><ul>
+        <li class="gv-active"><a href="../index.html">Components</a></li>
+        <li><a href="https://gravity.group.one" target="_blank">Gravity Docs ↗</a></li>
+      </ul></nav>
+      <div class="gv-nav-menu">
+        <div class="gv-badge gv-badge-info">v5.38.6</div>
+      </div>
+    </div>
+  </header>
+  <main id="main-content" class="gv-surface-dim gv-flex gv-flex-1">
+    <div class="gv-flex gv-flex-1 gv-mx-auto gv-w-max-container">
+
+      <!-- Sidebar -->
+      <div class="page-sidebar gv-sidebar gv-max-tab-hidden" style="min-width:200px;padding:24px 0;">
+        <div class="gv-side-menu">
+          <div class="gv-side-label">On this page</div>
+          <nav class="gv-side-nav"><ul>
+            <li><a href="#demo-main" class="gv-nav-item"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/play_circle.svg"></gv-icon><span>Demo</span></a></li>
+            <li><a href="#demo-variants" class="gv-nav-item"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/grid_view.svg"></gv-icon><span>Variants</span></a></li>
+          </ul></nav>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="gv-flex-1 gv-p-fluid" style="min-width:0;padding-top:32px;padding-bottom:64px;">
+
+        <!-- Breadcrumb -->
+        <div class="comp-breadcrumb">
+          <a href="../index.html"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_back.svg"></gv-icon> All components</a>
+          <span class="sep">/</span>
+          <span>Tabs</span>
+        </div>
+
+        <!-- Hero -->
+        <div class="comp-page-hero">
+          <h1>Tabs</h1>
+          <div class="hero-meta">
+            <div class="gv-badge gv-badge-info">Component</div>
+            <code class="gv-text-sm" style="background:var(--color-surface-dim);padding:2px 8px;border-radius:4px;font-size:12px;">.gv-section-tablist</code>
+            <a href="https://gravity.group.one/components/tabs" target="_blank" class="gv-button gv-button-secondary gv-mode-condensed" style="font-size:12px;">Docs ↗</a>
+          </div>
+          <p class="comp-desc">Horizontal tab bar for switching between related content panels.</p>
+        </div>
+
+        <!-- Main demo -->
+        <div class="demo-section" id="demo-main">
+          <h2>Demo</h2>
+          <div class="demo-box demo-tall">
+            <div style="display:flex;flex-direction:column;align-items:flex-start;width:100%;max-width:280px;">
+  <div class="gv-scroll-row" style="width:100%;"><div class="gv-section-controls gv-section-tablist" role="tablist" aria-label="Plans">
+    <button role="tab" class="gv-tab gv-control gv-tab-active" aria-selected="true" aria-controls="pi-tp1"><span class="gv-tab-content">Starter</span></button>
+    <button role="tab" class="gv-tab gv-control" aria-selected="false" aria-controls="pi-tp2"><span class="gv-tab-content">Business</span></button>
+    <button role="tab" class="gv-tab gv-control" aria-selected="false" aria-controls="pi-tp3"><span class="gv-tab-content">Enterprise</span></button>
+  </div></div>
+  <div id="pi-tp1" role="tabpanel" class="gv-tab-panel gv-panel-active" style="padding:12px 0;"><p class="gv-text-sm">10 GB · 1 website · Free SSL</p></div>
+  <div id="pi-tp2" role="tabpanel" class="gv-tab-panel" style="padding:12px 0;"><p class="gv-text-sm">50 GB · 5 websites · Priority support</p></div>
+  <div id="pi-tp3" role="tabpanel" class="gv-tab-panel" style="padding:12px 0;"><p class="gv-text-sm">Unlimited · Dedicated SLA</p></div>
+</div>
+          </div>
+          <div class="code-block">
+  <details>
+    <summary>Show HTML</summary>
+    <pre><code>&lt;div style=&quot;display:flex;flex-direction:column;align-items:flex-start;width:100%;max-width:280px;&quot;&gt;
+  &lt;div class=&quot;gv-scroll-row&quot; style=&quot;width:100%;&quot;&gt;&lt;div class=&quot;gv-section-controls gv-section-tablist&quot; role=&quot;tablist&quot; aria-label=&quot;Plans&quot;&gt;
+    &lt;button role=&quot;tab&quot; class=&quot;gv-tab gv-control gv-tab-active&quot; aria-selected=&quot;true&quot; aria-controls=&quot;pi-tp1&quot;&gt;&lt;span class=&quot;gv-tab-content&quot;&gt;Starter&lt;/span&gt;&lt;/button&gt;
+    &lt;button role=&quot;tab&quot; class=&quot;gv-tab gv-control&quot; aria-selected=&quot;false&quot; aria-controls=&quot;pi-tp2&quot;&gt;&lt;span class=&quot;gv-tab-content&quot;&gt;Business&lt;/span&gt;&lt;/button&gt;
+    &lt;button role=&quot;tab&quot; class=&quot;gv-tab gv-control&quot; aria-selected=&quot;false&quot; aria-controls=&quot;pi-tp3&quot;&gt;&lt;span class=&quot;gv-tab-content&quot;&gt;Enterprise&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&quot;pi-tp1&quot; role=&quot;tabpanel&quot; class=&quot;gv-tab-panel gv-panel-active&quot; style=&quot;padding:12px 0;&quot;&gt;&lt;p class=&quot;gv-text-sm&quot;&gt;10 GB · 1 website · Free SSL&lt;/p&gt;&lt;/div&gt;
+  &lt;div id=&quot;pi-tp2&quot; role=&quot;tabpanel&quot; class=&quot;gv-tab-panel&quot; style=&quot;padding:12px 0;&quot;&gt;&lt;p class=&quot;gv-text-sm&quot;&gt;50 GB · 5 websites · Priority support&lt;/p&gt;&lt;/div&gt;
+  &lt;div id=&quot;pi-tp3&quot; role=&quot;tabpanel&quot; class=&quot;gv-tab-panel&quot; style=&quot;padding:12px 0;&quot;&gt;&lt;p class=&quot;gv-text-sm&quot;&gt;Unlimited · Dedicated SLA&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</div>
+        </div>
+
+        <!-- Variants -->
+        <div class="demo-section" id="demo-variants">
+          <h2>Variants</h2>
+          <div class="variants-grid">
+            <div class="variant-card">
+  <div class="variant-preview "><div style="display:flex;flex-direction:column;align-items:flex-start;width:100%;max-width:300px;">
+  <div class="gv-scroll-row" style="width:100%;"><div class="gv-section-controls gv-section-tablist" role="tablist" aria-label="Settings">
+    <button role="tab" class="gv-tab gv-control gv-tab-active" aria-selected="true" aria-controls="v-t1"><span class="gv-tab-content">General</span></button>
+    <button role="tab" class="gv-tab gv-control" aria-selected="false" aria-controls="v-t2"><span class="gv-tab-content">Security</span></button>
+    <button role="tab" class="gv-tab gv-control" aria-selected="false" aria-controls="v-t3"><span class="gv-tab-content">DNS</span></button>
+  </div></div>
+  <div id="v-t1" role="tabpanel" class="gv-tab-panel gv-panel-active" style="padding:12px 0;"><p class="gv-text-sm">General settings.</p></div>
+  <div id="v-t2" role="tabpanel" class="gv-tab-panel" style="padding:12px 0;"><p class="gv-text-sm">Security settings.</p></div>
+  <div id="v-t3" role="tabpanel" class="gv-tab-panel" style="padding:12px 0;"><p class="gv-text-sm">DNS records.</p></div>
+</div></div>
+  <div class="variant-label">Standard</div>
+</div>
+<div class="variant-card">
+  <div class="variant-preview "><div class="gv-scroll-row" style="width:100%;"><div class="gv-section-controls gv-section-tablist" role="tablist" aria-label="Tabs">
+  <button role="tab" class="gv-tab gv-control gv-tab-active" aria-selected="true"><span class="gv-tab-content">Tab 1</span></button><button role="tab" class="gv-tab gv-control" aria-selected="false"><span class="gv-tab-content">Tab 2</span></button><button role="tab" class="gv-tab gv-control" aria-selected="false"><span class="gv-tab-content">Tab 3</span></button><button role="tab" class="gv-tab gv-control" aria-selected="false"><span class="gv-tab-content">Tab 4</span></button><button role="tab" class="gv-tab gv-control" aria-selected="false"><span class="gv-tab-content">Tab 5</span></button>
+</div></div></div>
+  <div class="variant-label">5 tabs</div>
+</div>
+<div class="variant-card">
+  <div class="variant-preview "><div class="gv-scroll-row" style="width:100%;"><div class="gv-section-controls gv-section-tablist" role="tablist" aria-label="Queue">
+  <button role="tab" class="gv-tab gv-control gv-tab-active" aria-selected="true"><span class="gv-tab-content">Active <div class="gv-badge gv-badge-success" style="margin-left:4px;">12</div></span></button>
+  <button role="tab" class="gv-tab gv-control" aria-selected="false"><span class="gv-tab-content">Pending <div class="gv-badge gv-badge-warning" style="margin-left:4px;">3</div></span></button>
+  <button role="tab" class="gv-tab gv-control" aria-selected="false"><span class="gv-tab-content">Expired</span></button>
+</div></div></div>
+  <div class="variant-label">With badges</div>
+</div>
+
+          </div>
+        </div>
+
+        <!-- CDN Icons -->
+        
+
+        <!-- Prev / Next -->
+        <div class="comp-prev-next">
+          <a href="system-wide-banner.html"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_back.svg"></gv-icon> System Wide Banner</a>
+          <a href="toggle.html" class="next">Toggle <gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_forward.svg"></gv-icon></a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+<script>
+document.querySelectorAll('.gv-acc-trigger').forEach(t => {
+  t.addEventListener('click', () => {
+    const open = t.getAttribute('aria-expanded') === 'true';
+    t.closest('.gv-accordion')?.querySelectorAll('.gv-acc-trigger').forEach(x => {
+      x.classList.remove('gv-expanded'); x.setAttribute('aria-expanded','false');
+      const b = document.getElementById(x.getAttribute('aria-controls'));
+      if (b) b.classList.add('gv-hidden');
+    });
+    if (!open) {
+      t.classList.add('gv-expanded'); t.setAttribute('aria-expanded','true');
+      const b = document.getElementById(t.getAttribute('aria-controls'));
+      if (b) b.classList.remove('gv-hidden');
+    }
+  });
+});
+document.querySelectorAll('[role="tablist"]').forEach(tl => {
+  tl.querySelectorAll('[role="tab"]').forEach(tab => {
+    tab.addEventListener('click', () => {
+      tl.querySelectorAll('[role="tab"]').forEach(x => { x.classList.remove('gv-tab-active'); x.setAttribute('aria-selected','false'); });
+      tab.classList.add('gv-tab-active'); tab.setAttribute('aria-selected','true');
+      const panel = document.getElementById(tab.getAttribute('aria-controls'));
+      tl.closest('[class]')?.querySelectorAll('.gv-tab-panel').forEach(p => p.classList.remove('gv-panel-active'));
+      if (panel) panel.classList.add('gv-panel-active');
+    });
+  });
+});
+document.querySelectorAll('.gv-chip:not(.gv-chip-radio)').forEach(c => c.addEventListener('click', () => c.classList.toggle('gv-chip-active')));
+document.querySelectorAll('.gv-chip-radio').forEach(c => {
+  c.addEventListener('click', () => {
+    c.closest('div')?.querySelectorAll('.gv-chip-radio').forEach(x => x.classList.remove('gv-chip-active'));
+    c.classList.add('gv-chip-active');
+  });
+});
+document.querySelectorAll('.gv-char-counter-input input, .gv-char-counter-input textarea').forEach(input => {
+  const counter = input.closest('.gv-form-option')?.querySelector('.gv-char-total');
+  if (counter) input.addEventListener('input', () => counter.textContent = input.value.length);
+});
+// sidebar scroll-spy
+const navLinks = document.querySelectorAll('.gv-side-nav a.gv-nav-item');
+if (navLinks.length) {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('gv-active'));
+        const a = document.querySelector(`.gv-side-nav a[href="#${e.target.id}"]`);
+        if (a) a.classList.add('gv-active');
+      }
+    });
+  }, { rootMargin: '-72px 0px -55% 0px' });
+  document.querySelectorAll('section[id], div[id]').forEach(s => obs.observe(s));
+}
+// index filter chips
+const filterBtns = document.querySelectorAll('[data-filter]');
+const indexCards = document.querySelectorAll('[data-cat]');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('gv-chip-active'));
+    btn.classList.add('gv-chip-active');
+    const f = btn.dataset.filter;
+    indexCards.forEach(c => { c.style.display = (!f || f === 'all' || c.dataset.cat === f) ? '' : 'none'; });
+    document.querySelectorAll('.cat-heading').forEach(h => {
+      if (!f || f === 'all') { h.style.display = ''; return; }
+      h.style.display = h.dataset.cat === f ? '' : 'none';
+    });
+  });
+});
+// index search
+const searchInput = document.getElementById('index-search');
+if (searchInput) {
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.toLowerCase();
+    indexCards.forEach(c => {
+      const name = c.querySelector('.card-name')?.textContent.toLowerCase() || '';
+      c.style.display = name.includes(q) ? '' : 'none';
+    });
+  });
+}
+</script>
+</body>
+</html>

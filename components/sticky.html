@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky — Gravity Components</title>
+  <link rel="stylesheet" href="https://gravity.group-cdn.one/v5.38.6/css/brands/group-one.min.css"/>
+  <script type="module" src="https://gravity.group-cdn.one/v5.38.6/index.umd.js"></script>
+  <link rel="stylesheet" href="../src/styles.css"/>
+  <link rel="stylesheet" href="../src/comp-page.css"/>
+</head>
+<body class="gv-activated gv-pt-nav gv-full-page">
+  <a href="#main-content" class="gv-skip-link">Skip to main content</a>
+  <header class="gv-main-header">
+    <div class="gv-header-nav">
+      <div class="gv-nav-left">
+        <a href="../index.html" class="gv-logo" aria-label="Gravity Components">
+          <gv-logo src="https://gravity.group-cdn.one/v5.38.6/logos/group-one.svg"></gv-logo>
+        </a>
+      </div>
+      <nav class="gv-nav-links"><ul>
+        <li class="gv-active"><a href="../index.html">Components</a></li>
+        <li><a href="https://gravity.group.one" target="_blank">Gravity Docs ↗</a></li>
+      </ul></nav>
+      <div class="gv-nav-menu">
+        <div class="gv-badge gv-badge-info">v5.38.6</div>
+      </div>
+    </div>
+  </header>
+  <main id="main-content" class="gv-surface-dim gv-flex gv-flex-1">
+    <div class="gv-flex gv-flex-1 gv-mx-auto gv-w-max-container">
+
+      <!-- Sidebar -->
+      <div class="page-sidebar gv-sidebar gv-max-tab-hidden" style="min-width:200px;padding:24px 0;">
+        <div class="gv-side-menu">
+          <div class="gv-side-label">On this page</div>
+          <nav class="gv-side-nav"><ul>
+            <li><a href="#demo-main" class="gv-nav-item"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/play_circle.svg"></gv-icon><span>Demo</span></a></li>
+            <li><a href="#demo-variants" class="gv-nav-item"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/grid_view.svg"></gv-icon><span>Variants</span></a></li>
+            <li><a href="#cdn-icons" class="gv-nav-item"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/image.svg"></gv-icon><span>CDN Icons</span></a></li>
+          </ul></nav>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="gv-flex-1 gv-p-fluid" style="min-width:0;padding-top:32px;padding-bottom:64px;">
+
+        <!-- Breadcrumb -->
+        <div class="comp-breadcrumb">
+          <a href="../index.html"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_back.svg"></gv-icon> All components</a>
+          <span class="sep">/</span>
+          <span>Sticky</span>
+        </div>
+
+        <!-- Hero -->
+        <div class="comp-page-hero">
+          <h1>Sticky</h1>
+          <div class="hero-meta">
+            <div class="gv-badge gv-badge-info">Component</div>
+            <code class="gv-text-sm" style="background:var(--color-surface-dim);padding:2px 8px;border-radius:4px;font-size:12px;">.gv-sticky-bar</code>
+            <a href="https://gravity.group.one/components/sticky" target="_blank" class="gv-button gv-button-secondary gv-mode-condensed" style="font-size:12px;">Docs ↗</a>
+          </div>
+          <p class="comp-desc">Fixed bar that appears after scroll to promote a key action or product.</p>
+        </div>
+
+        <!-- Main demo -->
+        <div class="demo-section" id="demo-main">
+          <h2>Demo</h2>
+          <div class="demo-box demo-tall">
+            <div style="display:flex;flex-direction:column;gap:0;width:100%;">
+  <div class="gv-sticky-content gv-state-open" style="position:relative;display:flex;align-items:center;padding:10px 16px;gap:12px;background:var(--color-surface-bright);">
+    <span class="gv-text-sm gv-text-bold">example.com</span>
+    <div class="gv-badge gv-badge-discount">€ 9,-/mo</div>
+    <div style="margin-left:auto;"><button type="button" class="gv-button gv-button-cta gv-mode-condensed">Order now</button></div>
+  </div>
+  <p class="gv-text-sm gv-text-secondary" style="padding:8px 16px;font-size:11px;">↑ appears after scroll</p>
+</div>
+          </div>
+          <div class="code-block">
+  <details>
+    <summary>Show HTML</summary>
+    <pre><code>&lt;div style=&quot;display:flex;flex-direction:column;gap:0;width:100%;&quot;&gt;
+  &lt;div class=&quot;gv-sticky-content gv-state-open&quot; style=&quot;position:relative;display:flex;align-items:center;padding:10px 16px;gap:12px;background:var(--color-surface-bright);&quot;&gt;
+    &lt;span class=&quot;gv-text-sm gv-text-bold&quot;&gt;example.com&lt;/span&gt;
+    &lt;div class=&quot;gv-badge gv-badge-discount&quot;&gt;€ 9,-/mo&lt;/div&gt;
+    &lt;div style=&quot;margin-left:auto;&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;gv-button gv-button-cta gv-mode-condensed&quot;&gt;Order now&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;gv-text-sm gv-text-secondary&quot; style=&quot;padding:8px 16px;font-size:11px;&quot;&gt;↑ appears after scroll&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+  </details>
+</div>
+        </div>
+
+        <!-- Variants -->
+        <div class="demo-section" id="demo-variants">
+          <h2>Variants</h2>
+          <div class="variants-grid">
+            <div class="variant-card">
+  <div class="variant-preview "><div style="display:flex;flex-direction:column;gap:0;width:100%;">
+  <div class="gv-sticky-content gv-state-open" style="position:relative;display:flex;align-items:center;padding:10px 16px;gap:12px;background:var(--color-surface-bright);">
+    <span class="gv-text-sm gv-text-bold">example.com</span>
+    <div class="gv-badge gv-badge-discount">€ 9,-/mo</div>
+    <div style="margin-left:auto;"><button type="button" class="gv-button gv-button-cta gv-mode-condensed">Order now</button></div>
+  </div>
+  <p class="gv-text-sm gv-text-secondary" style="padding:8px 16px;font-size:11px;">↑ appears after scroll</p>
+</div></div>
+  <div class="variant-label">Default</div>
+</div>
+<div class="variant-card">
+  <div class="variant-preview "><div style="display:flex;flex-direction:column;gap:0;width:100%;">
+  <div class="gv-sticky-content gv-state-open" style="position:relative;display:flex;align-items:center;padding:10px 16px;gap:12px;background:var(--color-surface-bright);">
+    <span class="gv-text-sm gv-text-bold">example.com</span>
+    <div class="gv-badge gv-badge-discount">€ 9,-/mo</div>
+    <div style="margin-left:auto;"><button type="button" class="gv-button gv-mode-condensed gv-button-cta ">Order now</button></div>
+  </div>
+  <p class="gv-text-sm gv-text-secondary" style="padding:8px 16px;font-size:11px;">↑ appears after scroll</p>
+</div></div>
+  <div class="variant-label">Condensed</div>
+</div>
+
+          </div>
+        </div>
+
+        <!-- CDN Icons -->
+        <div class="icons-section" id="cdn-icons">
+  <h2>CDN Icons used</h2>
+  <p class="section-sub">Copy the src path to use in your own components.</p>
+  <div class="icons-grid">
+    <div class="icon-tile">
+      <gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/close.svg"></gv-icon>
+      <span class="icon-name">close</span>
+    </div>
+  </div>
+</div>
+
+        <!-- Prev / Next -->
+        <div class="comp-prev-next">
+          <a href="stepper.html"><gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_back.svg"></gv-icon> Stepper</a>
+          <a href="system-wide-banner.html" class="next">System Wide Banner <gv-icon aria-hidden="true" src="https://gravity.group-cdn.one/v5.38.6/icons/arrow_forward.svg"></gv-icon></a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+<script>
+document.querySelectorAll('.gv-acc-trigger').forEach(t => {
+  t.addEventListener('click', () => {
+    const open = t.getAttribute('aria-expanded') === 'true';
+    t.closest('.gv-accordion')?.querySelectorAll('.gv-acc-trigger').forEach(x => {
+      x.classList.remove('gv-expanded'); x.setAttribute('aria-expanded','false');
+      const b = document.getElementById(x.getAttribute('aria-controls'));
+      if (b) b.classList.add('gv-hidden');
+    });
+    if (!open) {
+      t.classList.add('gv-expanded'); t.setAttribute('aria-expanded','true');
+      const b = document.getElementById(t.getAttribute('aria-controls'));
+      if (b) b.classList.remove('gv-hidden');
+    }
+  });
+});
+document.querySelectorAll('[role="tablist"]').forEach(tl => {
+  tl.querySelectorAll('[role="tab"]').forEach(tab => {
+    tab.addEventListener('click', () => {
+      tl.querySelectorAll('[role="tab"]').forEach(x => { x.classList.remove('gv-tab-active'); x.setAttribute('aria-selected','false'); });
+      tab.classList.add('gv-tab-active'); tab.setAttribute('aria-selected','true');
+      const panel = document.getElementById(tab.getAttribute('aria-controls'));
+      tl.closest('[class]')?.querySelectorAll('.gv-tab-panel').forEach(p => p.classList.remove('gv-panel-active'));
+      if (panel) panel.classList.add('gv-panel-active');
+    });
+  });
+});
+document.querySelectorAll('.gv-chip:not(.gv-chip-radio)').forEach(c => c.addEventListener('click', () => c.classList.toggle('gv-chip-active')));
+document.querySelectorAll('.gv-chip-radio').forEach(c => {
+  c.addEventListener('click', () => {
+    c.closest('div')?.querySelectorAll('.gv-chip-radio').forEach(x => x.classList.remove('gv-chip-active'));
+    c.classList.add('gv-chip-active');
+  });
+});
+document.querySelectorAll('.gv-char-counter-input input, .gv-char-counter-input textarea').forEach(input => {
+  const counter = input.closest('.gv-form-option')?.querySelector('.gv-char-total');
+  if (counter) input.addEventListener('input', () => counter.textContent = input.value.length);
+});
+// sidebar scroll-spy
+const navLinks = document.querySelectorAll('.gv-side-nav a.gv-nav-item');
+if (navLinks.length) {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('gv-active'));
+        const a = document.querySelector(`.gv-side-nav a[href="#${e.target.id}"]`);
+        if (a) a.classList.add('gv-active');
+      }
+    });
+  }, { rootMargin: '-72px 0px -55% 0px' });
+  document.querySelectorAll('section[id], div[id]').forEach(s => obs.observe(s));
+}
+// index filter chips
+const filterBtns = document.querySelectorAll('[data-filter]');
+const indexCards = document.querySelectorAll('[data-cat]');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('gv-chip-active'));
+    btn.classList.add('gv-chip-active');
+    const f = btn.dataset.filter;
+    indexCards.forEach(c => { c.style.display = (!f || f === 'all' || c.dataset.cat === f) ? '' : 'none'; });
+    document.querySelectorAll('.cat-heading').forEach(h => {
+      if (!f || f === 'all') { h.style.display = ''; return; }
+      h.style.display = h.dataset.cat === f ? '' : 'none';
+    });
+  });
+});
+// index search
+const searchInput = document.getElementById('index-search');
+if (searchInput) {
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.toLowerCase();
+    indexCards.forEach(c => {
+      const name = c.querySelector('.card-name')?.textContent.toLowerCase() || '';
+      c.style.display = name.includes(q) ? '' : 'none';
+    });
+  });
+}
+</script>
+</body>
+</html>
